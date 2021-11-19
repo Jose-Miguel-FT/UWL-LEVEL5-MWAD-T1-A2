@@ -4,19 +4,20 @@ import React from 'react';
   /*
   React component MedicalTreatment containing the attributes passed through props.
   This component's function is to print in a list all the attributes from props.
+  An instance of this component has been created through App.js.
   */
 }
 
-function MedicalTreatment() {
+function MedicalTreatment(props) {
   return (
     <div>
       <ul>
-        <li>{props.treatId}</li>
-        <li>{props.treatCourseId}</li>
-        <li>{props.type}</li>
-        <li>{props.category}</li>
-        <li>{props.name}</li>
-        <li>{props.StartDate}</li>
+        <li>{props.medicalTreatment.treatId}</li>
+        <li>{props.medicalTreatment.treatCourseId}</li>
+        <li>{props.medicalTreatment.type}</li>
+        <li>{props.medicalTreatment.category}</li>
+        <li>{props.medicalTreatment.name}</li>
+        <li>{props.medicalTreatment.startDate}</li>
       </ul>
     </div>
   );
