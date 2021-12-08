@@ -3,9 +3,17 @@ import React from 'react';
 function MedicalTreatment(props) {
   return (
     <div>
-      {props.medicalTreatment.treatId}, {props.medicalTreatment.treatCourseId},{' '}
-      {props.medicalTreatment.type}, {props.medicalTreatment.category},{' '}
-      {props.medicalTreatment.name}, {props.medicalTreatment.startDate}
+      Treat ID: {props.medicalTreatment.treatId}
+      <br />
+      Treat Course ID: {props.medicalTreatment.treatCourseId}
+      <br />
+      Type: {props.medicalTreatment.type}
+      <br />
+      Category: {props.medicalTreatment.category}
+      <br />
+      Name: {props.medicalTreatment.name}
+      <br />
+      Start Date: {props.medicalTreatment.startDate}
     </div>
   );
 }
